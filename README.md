@@ -1,6 +1,6 @@
 # SGNN
 
-# Predicting Depression Severity from Text Using a Relational-Graph Neural Network to Represent the Underlying Cognitive Bias
+# Schematizing Language to Context-level Depressive Features Using GNN with Schema Encoders
 This repo contains scripts to model depression in text.
 
 ### Data
