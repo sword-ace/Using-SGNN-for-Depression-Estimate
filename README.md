@@ -17,17 +17,6 @@ The repo contains the following files:
 - **requirements.txt** which are the libraries used in the conda environment of this project.
 - **helper** which contains the method of converting the text to graph
 
-## Results
-
-Our model achieves the following performance on :
-
-### PHQ regression
-
-![results](res1.jpg)
-
-<!--### Loss Curve-->
-<!---->
-<!--![loss](./resulta/2.jpg)-->
 
 pyTorch back-end was used for modeling.
 
