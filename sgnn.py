@@ -27,7 +27,7 @@ from torch.utils.data.dataloader import default_collate
 from helper import edges_mapping, cal_PMI, DataHelper
 
 """
-### SGNN MODEL AND other functions:###
+### SGNN MODEL and other functions:###
 """
 def pooling(x: torch.Tensor, batch_info, method):
     if method == 'add':
@@ -296,25 +296,6 @@ def create_batch_info(x, edge_index, batch, batch_size, num_nodes, edge_counter)
                   'mask': mask}
     return batch_info
 
-
-#for i, data in enumerate(train_loaders):
-#    print("item", i)
-#    print('data len', len(data))
-#    # data.to(device)
-#    # x, edge_index, batch, batch_size, edge_w = data.x, data.edge_index, data.batch, data.y,data.edge_attr
-#    x, edge_index, batch, batch_size, num_nodes = data.x, data.edge_index, data.batch, data.num_graphs, data.num_nodes
-#
-#    edge_counter = EdgeCounter()
-#
-#    batch_info = create_batch_info(x, edge_index, batch, batch_size, num_nodes, edge_counter)
-#    print(batch_info['n_colors'])
-#    print(batch_info['n_colors'].type())
-#    print(batch_info['num_nodes'])
-#    print(batch_info['n_per_graph'])
-#    # print(batch_info['average_edges'].size())
-#    print(batch_info['mask'].size())
-#    print(batch_info['n_batch'].size())
-#    print('label', data.y.cpu().data, data.y.cpu().data.type(), data.y.cpu().data.size())
 
 class SGNN(torch.nn.Module):
     def __init__(self, num_input_features: int, num_classes: int, num_layers: int, hidden: int,
