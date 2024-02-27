@@ -1,6 +1,6 @@
 # SGNN
 
-# Using Graph Representation Learning with Schema Encoders to Measure the Severity of Depressive Symptoms
+
 This repo contains scripts to model depression in text.
 
 ### Data
